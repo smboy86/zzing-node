@@ -1,0 +1,22 @@
+http://blog.danggun.net/4147
+
+에서 node 윈도우에 설치
+
++ 업그레이드 (실패했다)
+
+
+
+https://www.microsoft.com/web/webmatrix/ 에서 다운로드
+
+근데 이거 그냥 IDE인가??
+
+
+
+
+https://github.com/tjanczuk/iisnode
+
+issnoe 다운로드 및 설치
+
+
+
+
