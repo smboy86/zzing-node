@@ -1,0 +1,45 @@
+1일차
+동기 / 비동기 프로그램의 차이
+
+Node가 갖는 비동기 프로그램의 이점
+
+
+2일차
+:: Chapter 2 REPL 에 대해서 간략이 서술한다.
+REPL(레플) = Read - Eval - Print Loop
+1)
+REPL 의 활용
+
+객체(예약어?) 정보 확인
+
+gl = global;  또는 console.log(global);
+
+
+2) 탭키 
+자동완성기능
+
+3) rlwrap
+명령어 프롬프트 창에 색을 입혀 가독성을 올리는 기능?
+리눅스 
+apt-get install rlwrap
+윈도우
+Cygwin 같은 Unix 환경 에뮬레이터를 사용해야함
+
+
+
+:: Chapter 3 Node의 코어
+4) 꼭 알아두어야할 전역 개체
+1. global : 전역 네임스페이스
+2. process : STDIO 스트림에 대한 래퍼와 같은 필수 기능, 동기를 비동기 함수로 전환해주는 기능
+3. Buffer
+4. 자식프로세스
+5. url 처리 모듈
+
+
+
+
+
+
+
+
+
