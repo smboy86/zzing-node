@@ -5,6 +5,7 @@ var db = new mongodb.Db('mydb', server);
 // open database connection
 db.open(function(err, db) {
   if(!err) {
+    console.log('DB 작업 시작');
      // access or create widgets collection
      db.collection('widgets', function(err, collection) {
        // remove all widgets documents
@@ -18,7 +19,7 @@ db.open(function(err, db) {
                          price : 14.99};
             var widget2 = {title : 'Second Great widget',
                          desc : 'second greatest widget of all',
-                         price : 29.99};
+                         price : 291.99};
             /*
             //ex1
             collection.insert(widget1);
@@ -35,17 +36,26 @@ db.open(function(err, db) {
             });
             */
             // ex2) 한번에 INSERT 하기
-            collection.insert([widget1, widget2], {safe : true}, function(err, result){
+            // continueOnError / keepGoing
+            collection.insert([widget1, widget2], {safe : true, continueOnError:true}, function(err, result){
               if(err){
                 console.log('errrr  ' + err);
               }else{
                 console.log(result);
-
-                db.close();
+                
+                collection.find().toArray(function(err, docs){
+                  console.log('--------------------- find.toArray ----------------------');
+                  console.log(docs);
+                  
+                  db.close();
+                });
               }
             });
           }
        });
      });
+  }else{
+    console.log('errrrr  :::: ' + err);
   }
 });
+
