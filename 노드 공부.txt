@@ -52,6 +52,10 @@ Cygwin ���� Unix ȯ�� ���ķ����͸� ����ؾ�
 -- 2차 수정
 
 
+[ 170929 Node로 웹크롤링 만들기]
+
+참조 : https://www.youtube.com/watch?v=V3qibfw_5nQ
+
 
 
 

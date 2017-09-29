@@ -1,0 +1,14 @@
+{
+  "name": "crawler170929",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nodejs_crawler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio-httpcli": "^0.7.1"
+  }
+}
